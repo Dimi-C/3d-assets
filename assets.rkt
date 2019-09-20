@@ -222,6 +222,55 @@
   (gltf-model #:components-list
               (list (src red-tree-gltf-path))))
 
+; Verbana Flower (8,388 KB)
+; Credit: Jeremy E. Grayson - https://sketchfab.com/3d-models/verbena-flower-low-poly-02aa97bd5a934b0fbfa5a87835d23ca0
+; NOTE: This model relies on the transparencies of its .png textures to get away with being low poly, but this makes the file size greater than necessary. Compressing .png to .jpg loses that transparency and ruins the model.
+(provide verbana-flower)
+(define-runtime-path verbana-flower-gltf-path "assets/verbana-flower.glb")
+(define verbana-flower
+  (gltf-model #:components-list
+              (list (src verbana-flower-gltf-path))))
 
+; Snapdragon (3,298 KB)
+; Credit: rufusrockwell - https://sketchfab.com/3d-models/snapdragon-b4a95a86f35d48fd9a5020372d44539f
+; NOTE: This model relies on the transparencies of its .png textures, although is rendered without the issues of Verbana Flower. Slight issue with there being a white outline on the leaves and petals, may simply need to edit their edges in the .png file.
+(provide snapdragon)
+(define-runtime-path snapdragon-gltf-path "assets/snapdragon.glb")
+(define snapdragon
+  (gltf-model #:components-list
+              (list (src snapdragon-gltf-path))))
 
+; Low Poly Tree Pack (22,241 KB)
+; Credit: juyo - https://sketchfab.com/3d-models/low-poly-tree-pack-free-download-f6c460af62fe4c7db7db9b047dc3628c
+; NOTE: This is an asset pack and is recommended for dismantling. There is also a floor texture that should be removed.
+(provide tree-pack)
+(define-runtime-path tree-pack-gltf-path "assets/low-poly-tree-pack.glb")
+(define tree-pack
+  (gltf-model #:components-list
+              (list (src tree-pack-gltf-path))))
 
+; Yellow-Green Tree (25 KB)
+; Credit: BenjiToddArtist - https://sketchfab.com/3d-models/tree-5-dd9d0d42f9ae465e98f5ccc818c30ed8
+(provide yellow-green-tree)
+(define-runtime-path yellow-green-tree-gltf-path "assets/yellow-green-tree.glb")
+(define yellow-green-tree
+  (gltf-model #:components-list
+              (list (src yellow-green-tree-gltf-path))))
+
+; Low Poly Adventure Asset Pack (2,150 KB)
+; Credit: ghostlyfail - https://sketchfab.com/3d-models/low-poly-adventure-asset-pack-bda2fd1158df425fb703f53d926b1ec6
+; NOTE: This is an asset pack and is recommended for dismantling. There are also animations, but all I've seen is a duck swimming in the pond.
+(provide adventure-assets)
+(define-runtime-path adventure-assets-gltf-path "assets/adventure-assets.glb")
+(define adventure-assets
+  (gltf-model #:components-list
+              (list (src adventure-assets-gltf-path)
+                    (animation-mixer))))
+
+; Nature Pack (281 KB)
+; Credit: Saucy - https://sketchfab.com/3d-models/nature-environment-models-low-poly-b687543d05384ce1a8f0429baca02f67
+(provide nature-pack)
+(define-runtime-path nature-pack-gltf-path "assets/nature-pack.glb")
+(define nature-pack
+  (gltf-model #:components-list
+              (list (src nature-pack-gltf-path))))
